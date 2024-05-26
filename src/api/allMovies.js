@@ -14,8 +14,6 @@ export async function getAllMovies() {
     }
 
     const data = response.data;
-
-    console.info("Movies fetched successfully:", data);
     return data;
   } catch (error) {
     console.error("Error fetching movies:", error);
