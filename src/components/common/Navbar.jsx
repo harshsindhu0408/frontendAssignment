@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import { Transition } from "@headlessui/react";
 
 const Navbar = () => {
@@ -20,8 +20,12 @@ const Navbar = () => {
         <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between w-full h-16">
             <div className="flex w-full items-center justify-between">
-              <div className="flex-shrink-0 justify-between items-center">
-                <h1 className='text-primary font-FjallaOne text-4xl'>MOVIES HUB</h1>
+              <div className="flex-shrink-0 cursor-pointer justify-between items-center">
+                <Link to="/">
+                  <h1 className="text-primary font-FjallaOne text-4xl">
+                    MOVIES HUB
+                  </h1>
+                </Link>
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 text-black gap-x-3 flex items-baseline font-Lato text-xs font-bold space-x-4">
